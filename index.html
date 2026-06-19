@@ -392,6 +392,7 @@ h2.t{color:var(--jade);font-size:24px;margin-bottom:4px}
   background:#fff;border:1px solid var(--line);box-shadow:0 5px 16px rgba(20,30,40,.20);color:var(--jade);
   font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:6;padding-bottom:3px}
 .rownav:hover{background:var(--cream2);border-color:var(--jade2)}
+.rownav.left{left:-4px;right:auto}
 @media(max-width:760px){.rownav{top:80px;width:42px;height:42px;font-size:22px}}
 .catrow .row{display:flex;gap:16px;overflow-x:auto;scroll-behavior:smooth;padding:2px 2px 4px;scrollbar-width:none;-ms-overflow-style:none;scroll-snap-type:x proximity}
 .catrow .row::-webkit-scrollbar{display:none}
@@ -802,7 +803,7 @@ const SERIES={
    E("嫦娥","神話",["嫦娥"],[],"中秋節月亮上有什麼","嫦娥奔月、玉兔搗藥的神話"),
    E("","民俗",[],["孝順"],"重陽節為什麼要登高、敬老","認識重陽與敬老")
   ]},
- cjie:{nm:"節氣篇",pian:"節氣篇",mark:"節氣",age:"5–9 歲",grad:G.cul4,status:"soon",
+ cjie:{nm:"節氣篇",pian:"節氣篇",mark:"節氣",age:"5–9 歲",grad:G.cul4,status:"soon",preview:"立春・春分・夏至・秋分・冬至",
   tags:["二十四節氣","自然","農時"],gain:"跟著節氣，認識四季",
   about:"二十四節氣裡的大節氣——帶孩子跟著太陽和四季，認識祖先怎麼看天、看地、過日子。",
   eps:[
@@ -826,7 +827,7 @@ const SERIES={
    E("月下老人","民間傳說",["月下老人"],[],"月下老人的紅線","認識月老的傳說"),
    E("","民間信仰",[],[],"門神是誰？為什麼貼在門上","認識門神與守護")
   ]},
- clife:{nm:"生活文化篇",pian:"生活文化篇",mark:"生活",age:"5–9 歲",grad:G.cul3,status:"soon",
+ clife:{nm:"生活文化篇",pian:"生活文化篇",mark:"生活",age:"5–9 歲",grad:G.cul3,status:"soon",preview:"筷子・餃子・湯圓・紅包・春聯",
   tags:["生活","身分認同","常識"],gain:"日常裡的中華文化",
   about:"從筷子、餃子到姓氏、生肖——把日常裡的中華文化講給海外孩子聽。",
   eps:[
@@ -840,8 +841,8 @@ const SERIES={
    E("","文化",[],[],"爺爺奶奶的家鄉話","方言的概念與代際溝通")
   ]},
 
- fpersist:{nm:"學會堅持",pian:"學會堅持",mark:"堅持",age:"3–8 歲",grad:G.fab1,status:"soon",
-  tags:["堅持","努力","勤勞"],gain:"努力比天賦更重要",
+ fpersist:{nm:"學會堅持",pian:"學會堅持",mark:"堅持",age:"3–8 歲",grad:G.fab1,status:"soon",preview:"經典伊索：龜兔賽跑・北風與太陽・螞蟻與蚱蜢",
+  tags:["堅持","努力","勤勞"],gain:"堅持",
   about:"用寓言談堅持、勤勞與踏實——努力，比聰明更可貴。",
   eps:[
    E("","伊索寓言",[],["堅持"],"不肯認輸的小烏龜","懂得堅持，不驕傲"),
@@ -852,8 +853,8 @@ const SERIES={
    E("","民間故事",[],["堅持"],"愚公移山","懂得堅持與毅力"),
    E("","民間故事",[],["自律"],"三隻小豬蓋房子","踏實穩紮才靠得住")
   ]},
- fhonest:{nm:"誠實與善良",pian:"誠實與善良",mark:"誠善",age:"3–8 歲",grad:G.fab2,status:"soon",
-  tags:["誠實","善良","友愛"],gain:"誠實與善良的力量",
+ fhonest:{nm:"誠實與善良",pian:"誠實與善良",mark:"誠善",age:"3–8 歲",grad:G.fab2,status:"soon",preview:"經典伊索：狼來了・獅子與老鼠・誠實的樵夫",
+  tags:["誠實","善良","友愛"],gain:"誠實與善良",
   about:"溫柔版伊索寓言——誠實、善良、分享、報恩、分辨真朋友。",
   eps:[
    E("","伊索寓言",[],["誠實"],"說真話的勇氣","懂得誠實的價值"),
@@ -864,8 +865,8 @@ const SERIES={
    E("","伊索寓言",[],["感恩"],"救了螞蟻，螞蟻來報恩","懂得知恩圖報"),
    E("","伊索寓言",[],[],"狐狸和烏鴉的乳酪","別被甜言蜜語騙了")
   ]},
- fself:{nm:"知足與做自己",pian:"知足與做自己",mark:"知足",age:"5–8 歲",grad:G.fab3,status:"soon",
-  tags:["知足","面對挫折","做自己"],gain:"知足常樂、面對挫折",
+ fself:{nm:"知足常樂",pian:"知足常樂",mark:"知足",age:"5–8 歲",grad:G.fab3,status:"soon",preview:"經典伊索：金蛋的鵝・狐狸與葡萄・城市老鼠與鄉下老鼠",
+  tags:["知足","面對挫折","做自己"],gain:"知足常樂",
   about:"用寓言談知足、面對挫折、學會做自己。",
   eps:[
    E("","伊索寓言",[],["知足"],"金蛋鵝的秘密","懂得知足常樂、不貪心"),
@@ -876,8 +877,8 @@ const SERIES={
    E("","伊索寓言",[],[],"叼著骨頭的小狗","珍惜眼前的擁有"),
    E("","民間故事",[],["知足"],"一直想要更多的人","知足才會快樂")
   ]},
- fwise:{nm:"機智與相處",pian:"機智與相處",mark:"相處",age:"5–8 歲",grad:G.fab4,status:"soon",
-  tags:["機智","相處","謙讓"],gain:"用智慧解決、和氣相處",
+ fwise:{nm:"機智與相處",pian:"機智與相處",mark:"相處",age:"5–8 歲",grad:G.fab4,status:"soon",preview:"經典伊索：老鼠開會・狐狸與鶴・兩隻山羊過橋",
+  tags:["機智","相處","謙讓"],gain:"機智與相處",
   about:"用寓言學機智應對與好好相處——保護自己、互相禮讓、將心比心。",
   eps:[
    E("","伊索寓言",[],[],"聰明的小綿羊","識破不公平的藉口、保護自己"),
@@ -924,16 +925,14 @@ function close_(id){document.getElementById(id).classList.remove('on');}
 function peopleOf(s){return [...new Set(s.eps.map(e=>e.who).filter(Boolean))];}
 
 /* 三系列各一行欄目 · 16:9 thumbnail */
-function navRow(id){const el=document.getElementById(id);if(!el)return;
-  if(el.scrollLeft+el.clientWidth>=el.scrollWidth-12){el.scrollTo({left:0,behavior:'smooth'});}
-  else{el.scrollBy({left:el.clientWidth*0.92,behavior:'smooth'});}}
+function navRow(id,dir){const el=document.getElementById(id);if(!el)return;el.scrollBy({left:dir*el.clientWidth*0.92,behavior:'smooth'});}
 function renderStore(){const wrap=document.getElementById('catalog');wrap.innerHTML='';
   CATS.forEach((cat,ci)=>{
     const sec=document.createElement('div');sec.className='catrow';
     let cards='';
     cat.keys.forEach(k=>{const s=SERIES[k];const dn=seriesDone(k),tot=s.eps.length,pct=Math.round(dn/tot*100);
       const live=s.status==='live';const ppl=peopleOf(s);
-      const unitline=ppl.length?ppl.slice(0,5).join('・'):s.eps.map(e=>e.t).slice(0,3).join('・');
+      const unitline=s.preview?s.preview:(ppl.length?ppl.slice(0,5).join('・'):s.eps.map(e=>e.t).slice(0,3).join('・'));
       const badge=live?'<span class="free">免費試看</span>':'<span class="soon">敬請期待</span>';
       const thumb=s.thumb
         ? `<div class="thumb imgthumb" style="background-image:url('${s.thumb}')">${badge}</div>`
@@ -947,7 +946,7 @@ function renderStore(){const wrap=document.getElementById('catalog');wrap.innerH
     const showNav=cat.keys.length>3;
     sec.innerHTML=`<div class="ch"><span class="cn">${cat.nm}</span><span class="ct">${cat.tagline}</span></div>`
       +`<div class="rowwrap"><div class="row" id="row-${ci}">${cards}</div>`
-      +(showNav?`<button class="rownav" onclick="navRow('row-${ci}')" aria-label="看更多">›</button>`:'')
+      +(showNav?`<button class="rownav left" onclick="navRow('row-${ci}',-1)" aria-label="往左">‹</button><button class="rownav" onclick="navRow('row-${ci}',1)" aria-label="看更多">›</button>`:'')
       +`</div>`;
     wrap.appendChild(sec);});}
 
